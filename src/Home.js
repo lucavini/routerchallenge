@@ -2,7 +2,7 @@ import React from "react";
 import Head from "./Head";
 import useFetch from "./useFetch";
 import Item from "./Item";
-import './styles/Home.css'
+import "./styles/Home.css";
 
 const Home = () => {
   const [resquest, setResquest] = useFetch();

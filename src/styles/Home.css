@@ -1,17 +1,28 @@
-
-
-.wrapper{
-    width: 65%;
-    margin:0 auto;
-    display: flex;
-    flex-wrap: wrap;
+.wrapper {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.produtoItem{
-    margin: 1%;
-    width: 30%;
+.produtoItem {
+  margin: 1%;
+  width: 30%;
 }
 
-.produtoItem img{
-    width: 100%;
+.produtoItem img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .produtoItem {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .produtoItem {
+    width: 80%;
+  }
 }
