@@ -2,6 +2,7 @@ import React from "react";
 import Head from "./Head";
 import useFetch from "./useFetch";
 import Item from "./Item";
+import './styles/Home.css'
 
 const Home = () => {
   const [resquest, setResquest] = useFetch();
@@ -14,9 +15,15 @@ const Home = () => {
     return (
       <React.Fragment>
         <Head title="Home" />
-        {resquest.map((produto) => (
-          <Item key={produto.id} nome={produto.nome} foto={produto.fotos[0].src} />
-        ))}
+        <div className="wrapper">
+          {resquest.map((produto) => (
+            <Item
+              key={produto.id}
+              nome={produto.nome}
+              foto={produto.fotos[0].src}
+            />
+          ))}
+        </div>
       </React.Fragment>
     );
 

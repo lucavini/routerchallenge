@@ -4,7 +4,6 @@ import Rotas from "./Rotas";
 function App() {
   return (
     <div className="App">
-      <h1>Router Challenge</h1>
       <Rotas />
     </div>
   );
