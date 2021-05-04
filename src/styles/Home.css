@@ -1,5 +1,5 @@
 .wrapper {
-  width: 65%;
+  width: 50%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -7,22 +7,31 @@
 }
 
 .produtoItem {
-  margin: 1%;
-  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 30px;
+  min-width: 25%;
+  flex:1;
+  font-size: 1.5rem;
+}
+
+.produtoItem p{
+  margin-top: 0;
+  font-weight: 700;
 }
 
 .produtoItem img {
+  border-radius:5px;
   width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .produtoItem {
-    width: 40%;
+    min-width: 40%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .produtoItem {
-    width: 80%;
+    min-width: 80%;
   }
 }
