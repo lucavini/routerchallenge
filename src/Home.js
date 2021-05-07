@@ -15,7 +15,8 @@ const Home = () => {
     return (
       <React.Fragment>
         <Head title="Home" />
-        <div className="wrapper">
+        
+        
           {resquest.map((produto) => (
             <Item
               key={produto.id}
@@ -23,7 +24,7 @@ const Home = () => {
               foto={produto.fotos[0].src}
             />
           ))}
-        </div>
+        
       </React.Fragment>
     );
 

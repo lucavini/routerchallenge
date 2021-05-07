@@ -1,10 +1,18 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Header from "./Header";
 import Rotas from "./Rotas";
+import "./styles/App.css";
 
 function App() {
   return (
     <div className="App">
-      <Rotas />
+      <BrowserRouter>
+        <Header />
+        <div className="wrapper">
+          <Rotas />
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
