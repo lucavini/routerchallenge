@@ -5,20 +5,20 @@
   padding: 25px 0;
 }
 
-.navigation-button button{
-    background: rgb(230, 230, 230);
-    border: none;
-    border-radius:5px;
-    padding: 5px 15px;
-    margin-right: 10px;
-    font-size: 17px;
-    cursor: pointer;
+.navigation-button button {
+  background: rgb(230, 230, 230);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  font-size: 17px;
+  cursor: pointer;
 }
 
-.navigation-button button:hover{
-    background:rgb(211, 211, 211);
+.navigation-button button:hover {
+  background: rgb(211, 211, 211);
 }
 
-.navigation-button button.selected{
-    background:rgb(211, 211, 211);
+.active button {
+  background: rgb(211, 211, 211);
 }

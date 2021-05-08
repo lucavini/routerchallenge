@@ -1,0 +1,14 @@
+.produto{
+    width: 100%;
+    display: flex;
+}
+
+.produto img{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.produto-info{
+    font-size: 20px;
+    margin-left: 20px;
+}

@@ -3,6 +3,7 @@ import Head from "./Head";
 import useFetch from "./useFetch";
 import Item from "./Item";
 import "./styles/Home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [resquest, setResquest] = useFetch();
@@ -15,20 +16,21 @@ const Home = () => {
     return (
       <React.Fragment>
         <Head title="Home" />
-        
-        
-          {resquest.map((produto) => (
-            <Item
-              key={produto.id}
-              nome={produto.nome}
-              foto={produto.fotos[0].src}
-            />
-          ))}
-        
+
+        {resquest.map((produto) => 
+          <Link
+            to={`produto/${produto.id}`}
+            key={produto.id}
+            className="produtoItem anime"
+          >
+            <Item nome={produto.nome} foto={produto.fotos[0].src} />
+          
+          </Link>
+        )}
       </React.Fragment>
     );
 
-  return null;
+  return <div>Carregando...</div>;
 };
 
 export default Home;

@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "./Head";
 import useFetch from "./useFetch";
-import './styles/Contatos.css';
+import "./styles/Contatos.css";
 
 const Contatos = () => {
   const [request, setResquest] = useFetch();
