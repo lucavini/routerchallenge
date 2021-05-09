@@ -6,12 +6,15 @@ const Header = () => {
   return (
     <React.Fragment>
       <div className="navigation-button">
+
         <NavLink activeClassName="active" to="/" end>
-          <button >Produtos</button>
+          <button>Produtos</button>
         </NavLink>
+
         <NavLink activeClassName="active" to="contatos">
-          <button >Contatos</button>
+          <button>Contatos</button>
         </NavLink>
+        
       </div>
     </React.Fragment>
   );

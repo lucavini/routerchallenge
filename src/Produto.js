@@ -25,7 +25,12 @@ const Produto = () => {
         </div>
       </React.Fragment>
     );
-  return <p>Carregando...</p>;
+  return (
+    <div>
+      <p className="loading"></p>
+      <p>Carregando...</p>
+    </div>
+  );
 };
 
 export default Produto;

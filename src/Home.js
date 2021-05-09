@@ -27,10 +27,16 @@ const Home = () => {
           
           </Link>
         )}
+
       </React.Fragment>
     );
 
-  return <div>Carregando...</div>;
+  return (
+    <div>
+      <p className="loading"></p>
+      <p>Carregando...</p>
+    </div>
+  );
 };
 
 export default Home;
